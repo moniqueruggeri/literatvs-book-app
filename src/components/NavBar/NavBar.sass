@@ -1,0 +1,27 @@
+@use '../../styles/variables' as *
+
+.nav-bar
+    background-color: $primary-color
+    width: 100%
+    display: flex
+    padding: 16px
+    bottom: 0
+    border-radius: 32px 32px 0 0
+    position: fixed
+
+    .nav-bar-list
+        display: flex
+        justify-content: space-around
+        align-items: center
+        width: 100%
+
+        .nav-bar-item
+            font-size: 24px
+            color: $white-color
+            cursor: pointer
+
+            &:hover
+                color: $secondary-color
+
+        .activeIcon
+            color: $secondary-color
