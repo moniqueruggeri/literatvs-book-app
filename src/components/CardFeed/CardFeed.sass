@@ -6,133 +6,66 @@
     gap: 32px
     justify-content: space-between
     align-items: baseline
-    padding: 16px
-    position: relative
     width: 100%
+    padding: 16px
 
     .card-feed-book
-        display: flex
-        align-items: flex-start
-        justify-content: space-between
-        gap: 12px
-        background-color: $white-color
-        border-radius: 16px
-        padding: 16px
-        position: relative
-        height: 115px
         width: 100%
-        filter: drop-shadow(0px 4px 15px rgba(0, 0, 0, 0.25))
+        padding-bottom: 72px
 
-        .card-feed-book-info
+        .card-feed-book-container
             display: flex
             flex-direction: column
-            gap: 8px
-            justify-content: flex-end
-            padding-left: 32px
-            margin-left: 60px
+            align-items: flex-start
+            justify-content: space-between
+            gap: 12px
+            background-color: $white-color
+            border-radius: 16px
+            padding: 16px
+            position: relative
+            height: 115px
+            width: 100%
+            filter: drop-shadow(0px 4px 15px rgba(0, 0, 0, 0.25))
+            z-index: 1
 
-            p
-                font-weight: 400
-                color: $gray-color
-                font-size: $font-size-main
-
-            .card-feed-book-info-title
+            .card-feed-book-info
                 display: flex
                 flex-direction: column
-                gap: 4px
-                flex: 1
+                gap: 8px
+                justify-content: flex-end
+                padding-left: 48px
+                margin-left: 60px
 
-                h2
+                p
+                    font-weight: 400
+                    color: $gray-color
                     font-size: $font-size-main
-                    font-weight: 600
-                    color: $primary-color
 
-    .card-feed-book img
-        width: 76px
-        height: 110px
-        border-radius: 5px
-        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25))
-        position: absolute
-        top: -10px
+                .card-feed-book-info-title
+                    display: flex
+                    flex-direction: column
+                    gap: 4px
+                    flex: 1
 
-    .card-feed-book-add
-        background-color: $primary-color
-        border-radius: 50%
-        width: 32px
-        height: 32px
-        color: $white-color
-        border: none
+                    h2
+                        font-size: $font-size-main
+                        font-weight: 600
+                        color: $primary-color
 
-    .card-feed-book-comemnt
-        display: flex
-        align-items: center
-        gap: 8px
-        flex: 1
-        background-color: $white-color
-        border-radius: 0  0  16px 16px
-        padding: 24px 16px  16px 16px
-        margin: 0
-        position: absolute
-        bottom: -45px
-        z-index: -1
-        width: calc(100% - 32px)
+            .card-feed-book-img
+                position: absolute
+                width: 80px
+                border-radius: 5px
+                filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25))
+                top: -24px
 
-    .card-feed-book-comemnt-line
-        display: flex
-        align-items: center
-        gap: 8px
-        width: 100%
-
-    .card-feed-book-comemnt img
-        width: 32px
-        height: 32px
-        border-radius: 50%
-        object-fit: cover
-
-    .card-feed-book-profile-name
-        display: flex
-        flex-direction: column
-        gap: 4px
-
-        .card-feed-book-profile-name-name
-            font-size: $font-size-main
-            font-weight: 600
-            color: $primary-color
-
-        .card-feed-book-profile-name-history
-            font-size: $font-size-main
-            font-weight: 400
-            color: $gray-color
-
-    .card-feed-book-comemnt-icons
-        display: flex
-        align-items: center
-        justify-content: space-between
-        gap: 16px
-        
-        .card-feed-book-comemnt-icons-icon
-            background-color: transparent
-            border: none
-            color: $secondary-color
-
-        .card-feed-book-comemnt-icons-icon-favorite
-            display: flex
-            align-items: center
-            justify-content: space-between
-            gap: 4px
-
-            p
-                font-size: $font-size-main
-                font-weight: 400
-                color: $gray-color
-
-        .card-feed-book-comemnt-icons-icon-comment
-            display: flex
-            align-items: center
-            justify-content: space-between
-            gap: 4px
-
-            p
-                font-size: $font-size-main
-                font-weight: 400
-                color: $gray-color
+            .card-feed-book-add
+                background-color: $primary-color
+                border-radius: 50%
+                width: 32px
+                height: 32px
+                color: $white-color
+                border: none
+                position: absolute
+                right: 16px
+                top: 8px

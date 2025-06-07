@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import avatar from "../../assets/images/Martina.webp";
 import "./Header.sass";
 
@@ -10,7 +11,9 @@ const Header = () => {
           <h3 className="header-name__title">Martina!</h3>
         </div>
         <div className="header-img">
-          <img src={avatar} alt="avatar" />
+          <Link to={"/profile"}>
+            <img src={avatar} alt="avatar" />
+          </Link>
         </div>
       </div>
     </header>

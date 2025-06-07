@@ -1,32 +1,32 @@
-import './App.sass'
-import Header from './components/Header/Header'
-import SearchBar from './components/SearchBar/SearchBar'
-import TopButtons from './components/TopButtons/TopButtons'
-import NavBar from './components/NavBar/NavBar'
-import CardFeed from './components/CardFeed/CardFeed'
-import './styles/styles.sass'
+import "./App.sass";
+import "./styles/styles.sass";
+import { Routes, Route } from "react-router-dom";
+import Layout from "./layouts/Layout";
+import { BrowserRouter } from "react-router-dom";
+import Home from "./pages/Home/Home";
+import Search from "./pages/Search/Search";
+import BookShelf from "./pages/BookShelf/BookShelf";
+import Menu from "./pages/Menu/Menu";
+import Gifts from "./pages/Gifts/Gifts";
+import News from "./pages/News/News";
+import Profile from "./pages/Profile/Profile";
 
 function App() {
-
   return (
-    <>
-      <Header />
-      <SearchBar />
-      <div className='top-buttons-container'>
-      <TopButtons 
-        icon='star'
-        text='Novidades'
-        className='active'
-      />
-      <TopButtons 
-        icon='card_giftcard'
-        text='Cortesias'
-      />
-      </div>
-      <CardFeed />
-      <NavBar />
-    </>
-  )
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Layout />}>
+          <Route index element={<Home />} />
+          <Route path="/search" element={<Search/>} />
+          <Route path="/bookshelf" element={<BookShelf/>} />
+          <Route path="/menu" element={<Menu/>} />
+          <Route path="/gifts" element={<Gifts />} />
+          <Route path="/news" element={<News />} />
+        </Route>
+          <Route path="/profile" element={<Profile />} />
+      </Routes>
+    </BrowserRouter>
+  );
 }
 
-export default App
+export default App;
