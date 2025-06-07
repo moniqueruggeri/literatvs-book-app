@@ -1,4 +1,4 @@
-import "./search.sass";
+import "./Search.sass";
 
 function Search() {
   return (
